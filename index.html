@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Area of Trapezoid Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>
+        <img src="arbitrary-trapezoid.webp" alt="" /> Area of Trapezoid
+        Calculator
+      </h1>
+      <p><strong>Formula:</strong> A = ½ × (b₁ + b₂) × h</p>
+
+      <div class="inputs">
+        <label for="base1">Length of top base (b₁):</label>
+        <input type="text" id="base1" placeholder="Enter b₁" />
+
+        <label for="base2">Length of bottom base (b₂):</label>
+        <input type="text" id="base2" placeholder="Enter b₂" />
+
+        <label for="height">Height of trapezoid (h):</label>
+        <input type="text" id="height" placeholder="Enter h" />
+
+        <label for="units">Select unit:</label>
+        <select id="units">
+          <option value="cm">cm</option>
+          <option value="m">m</option>
+          <option value="ft">ft</option>
+          <option value="in">in</option>
+        </select>
+
+        <button id="calculateBtn">CALCULATE</button>
+      </div>
+
+      <div class="output">
+        <p>
+          The area of the trapezoid is:
+          <span id="result">----</span>
+        </p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
